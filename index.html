@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn1">CLICK ME FOR QUOTE</button>
+    <p id="p1"></p>
+    <script>
+        let arr=["All our dreams can come true; if we have the courage to pursue them","It always seems impossible until it’s done.","“Nothing is impossible, the word itself says ‘I’m possible’!”","A man can succeed at almost anything for which he has unlimited enthusiasm.” ","“Doubt kills more dreams than failure ever will.”","“Impatience never commanded success.”","“If opportunity doesn’t knock, build a door.”"]
+        let button1=document.getElementById("btn1")
+        let p1=document.getElementById('p1')
+        button1.addEventListener("click",()=>{
+            let res=Math.floor(Math.random()*arr.length)
+            p1.innerText=arr[res]
+        })
+    </script>
+</body>
+</html>
